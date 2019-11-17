@@ -33,5 +33,79 @@ body {
 
 /*ヘッダー*/
 .post-head {
+    grid-column: 2 / -2;
+    grid-row: 1;
     
+/*    ヘッダーのグリッド*/
+    display: grid;
+    grid-template-columns: 75px 1fr 140px;
+    grid-template-rows: 45px repeat(3 auto);
+    grid-column-gap: 24px;
+    grid-row-gap: 12px;
+}
+
+/*ヘッダータイトル*/
+.post-title {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/*ヘッダーリード文*/
+.post-lead {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+/*ヘッダーシリーズ*/
+.post-series {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+/*ヘッダー日付*/
+.post-date {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/*ヘッダーパンくずリスト*/
+.post-bread {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*ヘッダーカテゴリー*/
+.post-categry {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/*ヘッダーsns*/
+.post-sns{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/*セクション1*/
+ .sec01{
+     grid-column: 2 / -2;
+     grid-row: 3;
+}
+
+/*セクション2*/
+.sec02{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+/*セクション3*/
+.sec03 {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+/*フッター*/
+.post-foot{
+    grid-column: 1/-1;
+    grid-row: -2;
 }
