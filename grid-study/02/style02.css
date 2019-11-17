@@ -257,12 +257,14 @@ body {
 .sec02 .fig01{
     grid-column: 1;
     grid-row: 2 / 4;
+    margin-bottom: 40px;
 }
 
 /*セクション2画像2*/
 .sec02 .fig02{
     grid-column: 2;
     grid-row: 3;
+    margin-left: -40px;
 }
 
 /*セクション2文章*/
