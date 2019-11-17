@@ -238,6 +238,13 @@ body {
 .sec02{
     grid-column: 2;
     grid-row: 5;
+    
+/*    セクション2のグリッド*/
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
 }
 
 /*セクション3*/
