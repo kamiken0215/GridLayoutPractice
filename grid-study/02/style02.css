@@ -26,8 +26,9 @@ body {
 
 /*グリッド*/
 .post {
+    --side: 20px;
     display: grid;
-    grid-template-columns: 20px 1fr 50px 1fr 20px;
+    grid-template-columns: var(--side) 1fr 50px 1fr var(--side);
     grid-template-rows: auto 30px auto 40px auto 30px auto;
 }
 
@@ -175,7 +176,27 @@ body {
     background-color: #dd4b39;
 }
 
+/*ヘッダー区切り線*/
+.post-head::before{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    align-self: end;
+    content: '';
+    border-top: solid 4px #222;
+    height: 2px;
+    border-bottom: solid 2px #222;
+    margin: 0 calc(var(--side)*-1)-4px;;
+}
 
+/*ヘッダー装飾画面*/
+.post-head::after{
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    content: url(img/gourmet.svg)
+}
 
 /*セクション1*/
  .sec01{
