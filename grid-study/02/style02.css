@@ -198,6 +198,42 @@ body {
     content: url(img/gourmet.svg)
 }
 
+/*セクション共通*/
+
+.sec h2 {
+	font-family: 'Mplus 1p', sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.sec .spot {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	border: solid 1px #aaa;
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: block;
+	width: 3.75em;
+	height: 3.75em;
+	line-height: 3.75em;
+}
+
+.sec .num {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 78px;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.sec p {
+	font-size: 14px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
 /*セクション1*/
  .sec01{
      grid-column: 2 / -2;
@@ -214,6 +250,26 @@ body {
 .sec01 h2{
     grid-column: 2;
     grid-row: 1;
+    margin-left: -70px;
+    z-index: 1;
+    
+/*    小見出しのグリッド*/
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+}
+
+.sec01 h2::after{
+    grid-column: 1 / -1;
+    content: '';
+    display: block;
+    border: solid 4px gold;
+}
+
+.sec01 .spot {
+    margin-top: -8px;
+    align-self: start;
 }
 
 /*セクション01画像*/
@@ -232,6 +288,11 @@ body {
 .sec01 .shop{
     grid-column: 2;
     grid-row: 3;
+}
+
+.sec01 .num {
+    margin-bottom: -5px;
+    margin-right: 5px;
 }
 
 /*セクション2*/
